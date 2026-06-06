@@ -1,0 +1,25 @@
+{
+    "unique_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+    ],
+    "total_unique_objects": 9,
+    "class_counts": {
+        "person": 5,
+        "airplane": 1,
+        "bicycle": 1,
+        "tennis racket": 1,
+        "car": 1
+    },
+    "avg_fps": 6.83,
+    "peak_fps": 10.22,
+    "duration_seconds": 109.55,
+    "total_frames": 647
+}

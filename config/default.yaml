@@ -1,0 +1,32 @@
+input:
+  source: 0                   # int = webcam index, str = file path
+  width: 1280
+  height: 720
+
+detector:
+  backend: yolov8             # yolov8 | faster_rcnn
+  model_size: small           # nano | small | medium
+  confidence: 0.45
+  nms_iou: 0.50
+  classes: []                 # empty = all; [0, 2, 5] = person, car, bus
+
+tracker:
+  backend: deepsort           # deepsort | sort
+  max_age: 30
+  min_hits: 3
+  iou_threshold: 0.3
+  reid_model: osnet_x0_25
+
+visualization:
+  trail_length: 20
+  draw_velocity: true
+  headless: false
+
+output:
+  save_video: false
+  save_csv: true
+  output_dir: ./runs/
+
+api:
+  enabled: true
+  port: 8080
